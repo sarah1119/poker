@@ -1,0 +1,202 @@
+@import url(base.css);
+.box{
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	margin:auto;
+	/*background: url(../img/84173.png);*/
+	background: url(../img/00.jpg);
+	/*background-size: 1200px; */
+}
+.scene{
+	width: 905px;
+	height: 650px;
+	position: absolute;
+	top:20px;
+	left: 20px;
+	right: 0;
+	bottom: 0;
+	margin:auto;
+}
+.pai{
+	position: absolute;
+	left: 400px;
+	top: 0;
+	width: 108px;
+	height: 151px;
+	border-radius: 5px;
+	box-shadow: 0 0 1px 1px #777;
+	background-size: 100%;
+	float: left;
+	opacity: 0;
+}
+.scene .move-l,.scene .move-r,.restart , .rest , .score , .time{
+	width: 142px;
+	height: 45px;
+	position: absolute;
+	border-radius: 8px;
+	box-shadow: 0 0 0px 0px orange;
+	transition:box-shadow 0.3s ease-in-out;
+	line-height: 45px;
+	z-index: 1000;
+	text-align: center;
+	font-size: 20px;
+	color:#fff;
+	background: #0f131c url(../img/button.png) -32px 88px;
+	background-size: 220px; 
+}
+.scene .move-r{
+	top:480px;
+	left: 380px;
+	cursor: pointer;
+}
+.scene .move-l{
+	top:540px;
+	left: 380px;
+	cursor: pointer;
+}
+.restart{
+	top:100px;
+	left: 50px;
+	cursor: pointer;
+}
+.rest{
+	top:200px;
+	left: 50px;
+}
+.restart:hover ,.rest:hover , .scene .move-l:hover ,.scene .move-r:hover , .score:hover, .time:hover{
+	box-shadow: 0 0 10px 5px orange;
+	font-size: 18px;
+}
+.score{
+	top:100px;
+	right: 50px;
+}
+.number{
+	position: absolute;
+	width: 60px;
+	height: 100%;
+	top:0;
+	left: 85px;
+	color: #fff;
+	font-size: 20px;
+	line-height: 50px;
+	text-align: center;
+}
+.score-w{
+	position: absolute;
+	width: 95px;
+	height: 100%;
+	top: 0;
+	left: 0;
+	color: #fff;
+	font-size: 20px;
+	line-height: 50px;
+	text-align: right;
+}
+.time{
+	top:200px;
+	right: 50px;
+	cursor: pointer;
+}
+.success{
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	background:rgba(74,30,119,0.9);
+	background-image:url(../img/s.png);
+	top:100px;
+	left: 600px;
+	font-size: 20px;
+	text-align: right;
+	line-height: 300px;
+	color: #fff;
+	z-index: 1000;
+}
+.lchance{
+	width: 140px;
+	height: 30px;
+	position: absolute;
+	border-radius: 8px;
+	/*background: #ccc;*/
+	background:rgba(74,30,119,0.5);
+	line-height: 30px;
+	z-index: 1000;
+	text-align: center;
+	font-size: 15px;
+	color:#fff;	
+	left: 380px;
+	top:600px;
+}
+.number{
+	width: 30px;
+	height: 100%;
+	position: absolute;
+	top:0;
+	left: 60px;
+	color:orange;
+	font-size: 18px;
+	text-align: center;
+	line-height: 30px;
+}
+.lchance span{
+	width: 70px;
+	height: 100%;
+}
+#l{
+	float: left;
+}
+#r{
+	float: right;
+}
+.pause{
+	width:140px;
+	height:50px;
+	background:url("../img/5.png");
+	position: absolute;
+	top:320px;
+	right:0px;
+	color:#fff;
+	line-height:50px;
+	text-align: center;
+	font-size: 20px;
+	opacity:0;
+	box-shadow: 0px 0px 0px 0px orange;
+	transition:box-shadow 0.3s;
+	border-radius: 8px;
+}
+.active{
+	width:120px;
+	height:168px;
+	box-shadow: 0 0 5px 5px orange;
+	z-Index:zindex;
+}
+.start{
+	width:400px;
+	height:400px;
+	position: absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	margin:auto;
+	/*background:;*/
+	background:rgba(74,30,119,0.9) url("../img/ss.png")center center no-repeat ;
+	background-size:200px;
+	border-radius: 10px;
+	z-index:1000;
+}
+.button{
+	width:200px;
+	height:200px;
+	position: absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	margin:auto;
+	/*background:url("../img/bb.png") center center;*/
+
+}
